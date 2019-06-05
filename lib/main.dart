@@ -34,7 +34,10 @@ class _EightBallState extends State<EightBall> {
     return Center(
       child: Container(
         child: FlatButton(
-          child: Image.asset('images/ball$imageNumber.png'),
+          child: Image.asset(
+            'images/ball$imageNumber.png',
+            gaplessPlayback: true,
+          ),
           onPressed: () {
             setState(() {
               changeTheNumber();
